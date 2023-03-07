@@ -5,7 +5,7 @@ const dotEnv = require("dotenv");
 dotEnv.config();
 
 const cors=require("cors");
-app.use(cors({origin:[""]}));
+app.use(cors({origin:["http://localhost:3000","https://calculator-1m66.onrender.com"]}));
 app.use(express.json());
 
 
