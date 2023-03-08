@@ -35,14 +35,14 @@ app.post("/calculator/data",(req,res) => {
 app.get("/calculator/data/",(req,res)=>{
    
     calculator.findOne((err,doc)=>{res.json(doc)});
-    console.log("data requested form frontend");
+    
 })
 
 app.put("/calculator/data/",(req,res)=>{
     calculator.findByIdAndUpdate(_id="6402d4a3a77e4562e1b9b007",{history:req.body.data},{new:true},(err,doc)=>{
         
         res.json(doc);
-        console.log("data updated in database");
+   
 
     })
 
